@@ -43,9 +43,9 @@ export default function LayoutModalDialog() {
     <React.Fragment>
       <Box sx={{ width: '100vw', height: '100vh', display: 'flex', flexWrap: 'wrap', gap: 1 }}>
         {
-          layout === 'fullscreen' ? null : imagens.map((imagem) => {
+          layout === 'fullscreen' ? null : imagens.map((imagem, key) => {
             return (
-              <Box>
+              <Box key={key}>
                 <Box sx={{ position: 'relative' }}>
                   <img
                     src={imagem.nome}
